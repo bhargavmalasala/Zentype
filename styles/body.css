@@ -1,0 +1,14 @@
+.body {
+  min-height: 100vh;
+  background: rgb(32, 38, 209);
+  background: linear-gradient(
+    0deg,
+    rgba(32, 38, 209, 1) 0%,
+    rgba(38, 38, 49, 1) 100%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#4076E0", endColorstr="#40D7E0", GradientType=1 );
+  display: flex;
+  justify-content: center;
+  margin: 0px;
+}
