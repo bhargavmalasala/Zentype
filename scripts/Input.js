@@ -8,7 +8,8 @@ import {
 } from "./constants.js";
 import Word from "./Word.js";
 import Letter from "./Letter.js";
-
+import Reset from "./Reset.js";
+import { resetButton } from "./constants.js";
 export default class Input {
   constructor(keyboardObj, wpmObj, accuracyObj, timeObj) {
     this.textAreaInput = textAreaInput;
@@ -37,6 +38,7 @@ export default class Input {
     this.setEventListeners(); // set listeners
     this.populateText(); // set default paragraph
   }
+  
 
   setEventListeners() {
     document.addEventListener("keydown", () => this.textAreaInput.focus());
@@ -138,6 +140,14 @@ export default class Input {
 
     this.keysTyped++;
 
+    if (key === "Enter") {
+      this.reset();
+      this.Input.reset();
+    }
+    if (key === "Tab"){
+      this.reset();
+      this.Input.reset();
+    }
     // valid key input
     if (key === this.currentLetterObj.letter) {
       this.currentLetterObj.setCorrect();
