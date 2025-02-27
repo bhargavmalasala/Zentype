@@ -76,5 +76,6 @@
 }
 .nav__login:hover {
   color: white;
-  background-color: rgb(33, 26, 35, 0.7);
+  /* background-color: rgb(33, 26, 35, 0.7); */
+  background-color: rgba(27, 27, 255, 0.7);
 }
