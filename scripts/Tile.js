@@ -6,7 +6,7 @@ export default class Tile {
   }
 
   displayResult(result, timeout) {
-    setTimeout(() => this.tileElement.classList.add("tile_visible"), timeout); // 20
+    setTimeout(() => this.tileElement.classList.add("tile_visible"), timeout); 
     this.tileValueElement.textContent = result;
   }
 
