@@ -15,15 +15,12 @@ import {
   timeTile,
 } from "./constants.js";
 
-// create our tile classes
 const wpmTileObj = new Tile(wpmTile);
 const accuracyTileObj = new Tile(accuracyTile);
 const timeTileObj = new Tile(timeTile);
 
-// create keyboard
 const keyboardObj = new Keyboard();
 
-// create input handling class
 const inputObj = new Input(
   keyboardObj,
   wpmTileObj,
@@ -31,5 +28,4 @@ const inputObj = new Input(
   timeTileObj
 );
 
-// create reset button
 const resetObj = new Reset(resetButton, inputObj);

@@ -27,16 +27,16 @@ export default class Input {
     this.correctKeysTyped = 0;
     this.keysTyped = 0;
 
-    //keybooard
+    
     this.Keyboard = keyboardObj;
 
-    // tiles
+    
     this.Accuracy = accuracyObj;
     this.WPM = wpmObj;
     this.Time = timeObj;
 
-    this.setEventListeners(); // set listeners
-    this.populateText(); // set default paragraph
+    this.setEventListeners(); 
+    this.populateText(); 
   }
   
 
@@ -129,10 +129,10 @@ export default class Input {
   }
 
   checkInput(key) {
-    // invalid key input
+    
     if (ingoredkeys.includes(key)) return;
 
-    // backspace input
+    
     if (key === "Backspace") {
       this.setLastKey();
       return;
@@ -148,7 +148,7 @@ export default class Input {
       this.reset();
       this.Input.reset();
     }
-    // valid key input
+    
     if (key === this.currentLetterObj.letter) {
       this.currentLetterObj.setCorrect();
       this.Keyboard.triggerKey(true, key.toLowerCase());
@@ -158,7 +158,7 @@ export default class Input {
       this.Keyboard.triggerKey(false, key.toLowerCase());
     }
 
-    // move to next key
+    
     this.setNextKey();
   }
 

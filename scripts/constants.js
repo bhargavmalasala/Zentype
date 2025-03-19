@@ -1,22 +1,21 @@
-// tiles
+
 const wpmTile = document.querySelector(".tile_wpm");
 const accuracyTile = document.querySelector(".tile_accuracy");
 const timeTile = document.querySelector(".tile_time-remaining");
 
-// text area
+
 const textAreaInput = document.querySelector(".text-area__input");
 const textAreaText = document.querySelector(".text-area__text");
 
-// restart
 const resetButton = document.querySelector(".reset");
 
-// keyboard
+
 const keys = document.querySelectorAll(".key");
 
-// const word template
+
 const word = document.querySelector("#word-template").content;
 
-// valid keys
+
 
 const validInputKeys =
   "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz[];',./";
